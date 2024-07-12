@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Dashboard from './components/Dashboard';
+import './index.css'; // Asegúrate de que Tailwind CSS está siendo importado aquí
 
 function App() {
+  const [selectedDate, setSelectedDate] = useState(new Date().toISOString().slice(0, 10)); // Fecha inicial
+  const [offerings, setOfferings] = useState([]);
+
+  const addOffering = (newOffering) => {
+    setOfferings([...offerings, newOffering]);
+  };
+
+  const handleDateChange = (newDate) => {
+    setSelectedDate(newDate);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className="container mx-auto mt-5">
+      <header>
+        <h1 className="text-2xl font-bold text-center">Registro de Ofrendas Construcción Templo - IASD Osorno Central</h1>
       </header>
+      <Dashboard offerings={offerings} onAddOffering={addOffering} onDateChange={handleDateChange} />
     </div>
   );
 }
