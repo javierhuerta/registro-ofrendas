@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/registro-ofrendas/static/css/main.9c6a1e9d.css",
+    "main.js": "/registro-ofrendas/static/js/main.8873d7e7.js",
+    "static/js/453.96319c03.chunk.js": "/registro-ofrendas/static/js/453.96319c03.chunk.js",
+    "index.html": "/registro-ofrendas/index.html",
+    "main.9c6a1e9d.css.map": "/registro-ofrendas/static/css/main.9c6a1e9d.css.map",
+    "main.8873d7e7.js.map": "/registro-ofrendas/static/js/main.8873d7e7.js.map",
+    "453.96319c03.chunk.js.map": "/registro-ofrendas/static/js/453.96319c03.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9c6a1e9d.css",
+    "static/js/main.8873d7e7.js"
+  ]
+}
